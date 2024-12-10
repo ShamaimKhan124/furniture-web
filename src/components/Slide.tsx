@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Inner from "../../public/Inner.png"
+import Inner from "../../public/inner.png"
 
 export default function Slide() {
   return (
