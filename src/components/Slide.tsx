@@ -14,7 +14,7 @@ export default function Slide() {
         </button>
       </div>
       <div className="slideImages flex justify-center sm:justify-start">
-        <Image src={Inner}" width={400} height={50} alt="Beautiful Room Inspiration" />
+        <Image src={Inner} width={400} height={50} alt="Beautiful Room Inspiration" />
       </div>
       <div className="slideImages mt-3 flex justify-center sm:justify-start">
         <Image src="/Sideinner.png" width={400} height={50} alt="Additional Room Inspiration" />
