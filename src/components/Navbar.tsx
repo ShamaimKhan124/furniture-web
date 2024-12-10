@@ -5,6 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineUser } from "react-icons/hi";
 import { IoCartOutline } from "react-icons/io5";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import logo from '../../public/Logo.jpeg'
 import Image from 'next/image';
 
 const Navbar = () => {
@@ -20,7 +21,7 @@ const Navbar = () => {
         
         <div className="flex items-center space-x-2">
           <Image
-            src="/logo.jpeg"
+            src={logo}
             alt="Furniro Logo"
             width={120}
             height={40}

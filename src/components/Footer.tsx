@@ -1,50 +1,51 @@
-export default function Footer(){
+export default function Footer() {
     return (
-        <>
-        <footer className="-mt-[500px]">
-
-        <div className="footer p-5 border-t-2 leading-10  border-gray-300">
-            <div className="w-[14rem]  ">
-                <h2 className="font-bold text-[2rem]">Funiro.</h2>
-                <p className="leading-none">400 University Drive Suite 200 Coral Gables,
-                FL 33134 USA</p>
+      <>
+        <footer className="relative mt-[20px] ">
+          <div className="footer p-5 border-t-2 leading-10 border-gray-300 flex flex-col md:flex-row justify-around gap-6 md:gap-12">
+            <div className="w-full md:w-[14rem]">
+              <h2 className="font-bold text-2xl">Funiro.</h2>
+              <p className="leading-none">400 University Drive Suite 200 Coral Gables, FL 33134 USA</p>
             </div>
-
-
-            <div>
-                <h4>Navbar</h4>
-                <ul>
-                    <li>Home</li>
-                    <li>Shop</li>
-                    <li>About</li>
-                    <li>Contact</li>
-                </ul>
+  
+            <div className="w-full text-center md:text-left">
+              <h4 className="font-semibold">Navbar</h4>
+              <ul className="space-y-2">
+                <li>Home</li>
+                <li>Shop</li>
+                <li>About</li>
+                <li>Contact</li>
+              </ul>
             </div>
-
-
-            <div>
-                <h4>Help</h4>
-                <ul>
-                    <li>Payment Option</li>
-                    <li>Returns</li>
-                    <li>Privacy Policies</li>
-                </ul>
+  
+            <div className="w-full text-center md:text-left">
+              <h4 className="font-semibold">Help</h4>
+              <ul className="space-y-2">
+                <li>Payment Option</li>
+                <li>Returns</li>
+                <li>Privacy Policies</li>
+              </ul>
             </div>
-
-            <div>
-                <h4>Newsletter</h4>
-            <input type="text" placeholder="Your Email" />
-            <button type="submit" className="font-bold">SUBSCRIBE</button>
+  
+            <div className="w-full text-center md:text-left">
+              <h4 className="font-semibold">Newsletter</h4>
+              <input
+                type="text"
+                placeholder="Your Email"
+                className="mt-2 p-2 border-b-2 border-gray-300 outline-none focus:border-yellow-600 w-full sm:w-[250px] md:w-[300px]"
+              />
+              <button type="submit" className="font-bold mt-3 bg-yellow-600 text-white py-2 px-4 rounded hover:bg-yellow-700 transition">
+                SUBSCRIBE
+              </button>
             </div>
-            
-        </div>
-        <div  className="para">
-
-            <hr />
-            <p>2023 furino. All rights reverved</p>
-        </div>
+          </div>
+  
+          <div className="para absolute left-1/2 transform -translate-x-1/2 w-full text-center">
+            <hr className="my-4 mx-auto w-[1000px] sm:w-[80%] md:w-[60%]" />
+            <p className="font-normal">2023 Furino. All rights reserved</p>
+          </div>
         </footer>
-        </>
-    )
-
-}
+      </>
+    );
+  }
+  

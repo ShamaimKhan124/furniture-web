@@ -1,8 +1,6 @@
-
 import Image from "next/image";
 
 export default function Products() {
-   
   interface Card {
     name: string;
     age: number;
@@ -71,36 +69,36 @@ export default function Products() {
   ];
 
   return (
-    <>
-      <div className="product" id="products">
-        <h2 className="text-center p-2 font-bold text-[3rem]">Our Product</h2>
-      </div>
-      <div className="cardsContainer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 p-4">
+    <div className="px-4 py-8">
+      <h2 className="text-center text-4xl font-bold mb-12">Our Products</h2>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         {data.map((card, index) => (
           <div
-            className="card border shadow-lg rounded-lg overflow-hidden"
             key={index}
+            className="bg-white border rounded-lg shadow-md overflow-hidden transition-transform hover:scale-105"
           >
-            <Image
-              src={card.image}
-              alt={card.name}
-              width={300}
-              height={300}
-              className="object-cover"
-            />
-            <div className="card-body p-4">
-              <h5 className="card-title font-bold text-lg">{card.name}</h5>
-              <p className="card-text text-gray-600">{card.description}</p>
-              <h5 className="card-title font-bold text-lg mt-2">{card.price}</h5>
+            <div className="w-full h-64 relative">
+              <Image
+                src={card.image}
+                alt={card.name}
+                layout="fill"
+                objectFit="cover"
+                className="rounded-t-lg"
+              />
+            </div>
+            <div className="p-4">
+              <h5 className="font-bold text-xl">{card.name}</h5>
+              <p className="text-gray-600 text-sm mt-2">{card.description}</p>
+              <h5 className="font-bold text-lg mt-4">{card.price}</h5>
             </div>
           </div>
         ))}
       </div>
-      <div className="flex items-center justify-center mb-12">
-        <button className="productBtn text-[#B88E2F] p-2 border-2 border-[#B88E2F] rounded hover:bg-[#B88E2F] hover:text-white transition">
+      <div className="flex justify-center mt-12">
+        <button className="text-[#B88E2F] px-6 py-2 border-2 border-[#B88E2F] rounded hover:bg-[#B88E2F] hover:text-white transition">
           Show More
         </button>
       </div>
-    </>
+    </div>
   );
 }

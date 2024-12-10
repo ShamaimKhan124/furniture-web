@@ -2,27 +2,27 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="relative w-full h-[63rem] flex justify-center items-center">
-      {/* Hero Image */}
-      <div className="relative w-[90rem] -mt-56 h-[48rem]">
+    <div className="relative w-full h-screen flex justify-center items-center">
+      <div className="relative w-full h-full">
         <Image
           src="/home.jpeg"
           layout="fill"
           objectFit="cover"
-          alt="Picture of the author"
+          alt="Hero Image"
         />
-        {/* Hero Text */}
-        <div className="ml-72 mt-11 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#FFF3E3] w-[34rem] rounded-md p-16 leading-8">
-          <h6 className="font-bold text-lg">New Arrival</h6>
-          <h3 className="text-4xl font-extrabold text-[#B88E2F] mt-4">
-            Discover Our <br /> New Collection
-          </h3>
-          <p className="mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore
-          </p>
-          <button className="mt-6 bg-[#B88E2F] text-white py-2 px-12 rounded">
-            BUY NOW
-          </button>
+        <div className="absolute inset-0 flex justify-center items-center">
+          <div className="bg-[#FFF3E3] max-w-[90%] sm:max-w-md md:max-w-lg lg:max-w-xl rounded-md p-8 md:p-12 text-center md:text-left">
+            <h6 className="font-bold text-base md:text-lg">New Arrival</h6>
+            <h3 className="text-2xl md:text-3xl animate-pulse lg:text-4xl font-extrabold text-[#B88E2F] mt-2 md:mt-4">
+              Discover Our <br /> New Collection
+            </h3>
+            <p className="mt-2 md:mt-4 text-sm md:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolore
+            </p>
+            <button className="mt-4 md:mt-6 bg-[#B88E2F] text-white py-2 px-8 md:px-12 rounded">
+              BUY NOW
+            </button>
+          </div>
         </div>
       </div>
     </div>
