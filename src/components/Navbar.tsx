@@ -1,5 +1,6 @@
 "use client"
 import React, { useState } from 'react';
+import Link from "next/link";
 import { IoIosSearch } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa";
 import { HiOutlineUser } from "react-icons/hi";
@@ -31,42 +32,46 @@ const Navbar = () => {
 
         
         <ul className="hidden md:flex items-center space-x-6">
-          <li>
-            <a
-              href="/"
+          <Link
+            
+              href="/" legacyBehavior>
+                <a
               className="text-gray-700 hover:text-gray-500 transition duration-200"
               aria-label="Home"
             >
               Home
             </a>
-          </li>
-          <li>
-            <a
-              href="/shop"
+          </Link>
+          <Link
+            
+              href="/shop" legacyBehavior>
+                <a
               className="text-gray-700 hover:text-gray-500 transition duration-200"
               aria-label="Shop"
             >
               Shop
             </a>
-          </li>
-          <li>
-            <a
-              href="/blog"
+          </Link>
+          <Link
+            
+              href="/blog" legacyBehavior>
+                <a
               className="text-gray-700 hover:text-gray-500 transition duration-200"
               aria-label="Blog"
             >
               Blog
             </a>
-          </li>
-          <li>
-            <a
-              href="/contact"
+          </Link>
+          <Link
+            
+              href="/contact" legacyBehavior>
+                <a
               className="text-gray-700 hover:text-gray-500 transition duration-200"
               aria-label="Contact"
             >
               Contact
             </a>
-          </li>
+          </Link>
         </ul>
 
         
